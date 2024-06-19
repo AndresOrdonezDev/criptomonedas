@@ -1,0 +1,135 @@
+:root {
+    --blanco: #fff;
+    --primario: #61ecbc;
+    --negro: #182339;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    background-image: url(../img/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    font-family: 'Outfit', sans-serif;
+    font-size: 2rem;
+}
+.contenedor {
+    max-width: 80rem;
+    width: 95%;
+    margin: 0 auto;
+}
+.titulo {
+    font-size: 3.8rem;
+    margin-top: 5rem;
+    line-height: .8;
+    color: var(--blanco);
+}
+.titulo span {
+    color: var(--primario);
+    display: block;
+    font-size: 4.4rem;
+}
+.contenido {
+    margin-top: 5rem;
+    padding: 6rem 2rem;
+    background-color: var(--blanco);
+    max-width: 40rem;
+    border-radius: 1rem;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+.formulario,
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.formulario legend {
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 900;
+}
+.formulario label {
+    color:  var(--negro);
+}
+.formulario select {
+    background-color: #ecebeb;
+    border: none;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: 1.8rem;
+}
+.formulario [type="submit"] {
+    background-color: var(--primario);
+    color: var(--negro);
+    border: none;
+    padding: 1rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 300ms ease;
+    margin-top: 2rem;
+}
+.formulario [type="submit"]:hover {
+    background-color: #0cb387;
+}
+
+.contenedor-resultado h2 {
+    text-align: center;
+}
+
+.resultado {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    gap: 1rem;
+}
+.resultado img {
+    width: 100%;
+}
+.resultado p {
+    margin: 0 0 1rem;
+    font-size: 1.6rem;
+}
+.resultado span {
+    font-weight: 700;
+}
+
+.textoapi{
+    color: var(--blanco);
+    margin-top: 2rem;
+    width: 100%;
+    font-size: 1.3rem;
+    text-align: center;
+
+}
+
+.textoapi a{
+    color: var(--blanco);
+}
+
+.info_flex{
+    display: flex;
+    flex-direction: column;
+    max-width: 44rem;
+    align-items: center;
+}
+.boton{
+    background-color: var(--blanco);
+    border: none;
+    border-radius: 1rem;
+    padding: .5rem;
+    margin-top: 5rem;
+    color: var(--negro);
+    font-weight: 400;
+    transition: background-color 0.3s;
+    font-size: 1.5rem;
+}
+.boton:hover{
+    background-color: #61ecbc;
+}
+a{
+    text-decoration: none;
+    color: var(--negro);
+}
